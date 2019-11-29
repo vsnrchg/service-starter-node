@@ -1,12 +1,3 @@
-
-/******************************************************************************************
- * @Purpose     : Here we have to write test script in mocha for testing backend using
- *                chai
- * @file        : test.js
- * @author      : Dipak Patil
- * @since       : 05-07-2019
- ******************************************************************************************/
-
 const server=require('../index');
 const chai=require('chai');
 const chaihttp=require('chai-http');
