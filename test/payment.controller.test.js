@@ -5,7 +5,7 @@ const chaihttp=require('chai-http');
 chai.use(chaihttp);
 chai.should();
 
-describe('payments',()=>{
+describe('Testing payment controller layer',()=>{
     const data={
         "amount": 100,
         "beneficiary": {
@@ -20,7 +20,7 @@ describe('payments',()=>{
         }
     };
     
-    it('payment process',(done)=>{
+    it('payment returns 200 code after successfull',(done)=>{
         chai.request(server).post('/payments').send(data).end((err,res)=>{
                 res.should.have.status(200);
             done();
